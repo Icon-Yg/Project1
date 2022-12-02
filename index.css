@@ -1,0 +1,233 @@
+  body{
+     box-sizing: border-box;
+     font-family: 'IBM Plex Sans', sans-serif;
+       font-size: 1rem;
+        padding: 0;
+         margin:0; 
+          
+        
+  }
+    img{
+      max-width: 100%;
+    }
+ .nav{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+       padding: 0 4em;
+         background-color: black;
+        }
+        .nav-bar{
+          display: flex;
+          align-items: center;
+          position:relative
+        }
+      .nav-bar a{
+       color: #fff;
+       text-decoration: none;
+     }
+    .nav-list{
+      display: flex; 
+    }
+    .nav li,
+  button {
+   font-size: 1.4rem;
+   list-style-type: none;
+ } 
+   
+ .hamburger{
+  display: none;
+   cursor: pointer;
+ }
+ 
+ .bar1{
+   position: relative;
+   bottom: 0.0em ;
+   padding: 0 0.40em;
+      
+}
+ 
+svg{
+  position: relative;
+   top: 0.30em;
+    padding: 0.10em;
+}
+
+.span1{
+  position:relative; 
+    top: -0.1em;
+      padding-left: 0.20em; 
+    }
+.nav-bar li:nth-child(2) {
+     border-left: 1px solid#fff;
+        position: relative;
+        left: 0.30em; 
+          padding-left: 0.60em;
+}
+
+button{
+   padding: 0.50em 1em;
+    margin: 0.60em;
+    border-radius: 0.50em;
+    color: #fff;
+  }
+
+.button1{
+  border: 1px solid #fff;
+   background: #000;
+}
+.button2{
+  border: 0;
+  background: #4C5FD5;   
+}
+
+.abstarct-button{
+   background-color: transparent;
+      color: #4C5FD5;
+       font-size: 1.2rem;
+         border: 0;
+}
+.abstarct-button:hover{
+     color: #2f41b6;
+}
+
+
+.bar{ 
+  width: 2em;
+  height: 0.20em;
+  display: block;
+        background-color: #fff;
+         margin: 0.35em auto;
+}
+ .head{
+    background-color:#dadbf1 ;
+        text-align: center;
+         padding: 3em;
+ }  
+ h1{
+   font-size: 3.3rem;
+ }
+ input{
+    width: 40%;
+    margin-bottom: 3em;
+     padding: 1.5em;
+      border-radius: 0.40em;
+       background-color: #fff;
+ }
+   .bx{
+     font-size: 1.4rem;
+       position: relative;
+         right: 1.2em; 
+           top: 0.30em;
+   }
+   
+.container{
+   width: 100%;
+ height: auto;
+   display: flex;
+         flex-direction: row;
+      justify-content: center;
+         flex-wrap: wrap;
+      margin: 2em 0;     
+}
+.containers{
+   width: 35rem;
+    height: 10rem;
+     margin: 2em;
+      display: flex; 
+}
+ .container-secondary  img{
+   width: 5em;
+    height: 5em;
+      position: relative;
+       top: 1.5em;
+ }
+.container-main{
+   order: 2;
+}
+ .container-secondary{
+    order: 1;
+     padding-right: 1em;
+}
+
+ .anchor a {
+   text-decoration: none;
+ }
+  .anchor:hover{
+      text-decoration: underline;
+  }
+ .anchor span {
+    position: relative;
+      left: 1.6em;
+       top: -0.10em;    
+ }
+
+.footer-main{
+ background-color: #000;
+  color: #fff;
+    display: flex; 
+         padding: 6em;
+         flex-direction: row;       
+}
+
+.footer-container li{
+    list-style-type: none;
+}
+ .footer-container a{
+   color: #fff;
+     text-decoration: none;  
+ }
+.last1{
+    position: relative;
+     top: 12em;        
+ }
+
+  @media(max-width:900px){
+    .hamburger{
+      display: block;      
+    }
+     .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+     }
+    .hamburger.active  .bar:nth-child(1){
+         transform: rotate(45deg) translateY(12px);
+    }
+     .hamburger.active .bar:nth-child(3){
+           transform: rotate(-45deg) translateY(-12px);
+      }
+   .nav-list{
+      position: fixed;
+       left: -100%;
+         background-color: rgb(36, 34, 34);
+          flex-direction: column;
+            top: 4.2rem;
+               width: 100%;  
+               text-align: center;
+              }
+  button{
+   margin: 0.15em 0;
+     }
+.nav-list.active{
+   left: 0%;
+}
+.nav {
+  padding: 0 1em;
+}
+    .button1,
+    .button2 {
+        border: 0;
+         background-color: transparent;
+    }
+     .button1{
+        padding-top: 0.10em;
+        border-radius: 0;
+        border-bottom: 1px solid rgb(126, 119, 119);
+     }   
+       button:hover {
+        cursor: pointer;       
+           color: rgb(126, 119, 119);    
+       }
+        
+  }
+      
+
